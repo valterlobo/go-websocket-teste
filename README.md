@@ -1,6 +1,9 @@
 # go-websocket-teste
 Teste de conceito websocket golang. 
 
+   //@TODO - realizar um teste com  clientes diferentes. Exemplo : 
+   O cliente A - so recebe as mensagens direcionadas para ele. 
+   O cliente B - so recebe as mensagens direcionadas para ele.
 
    ## WEB SOCKETS : 
    ### How to Use Websockets in Golang: Best Tools and Step-by-Step Guide
