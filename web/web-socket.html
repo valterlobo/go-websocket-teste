@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOCKET - VER CONSOLE</title>
+    <script>
+
+        var socket = new WebSocket('ws://localhost:8080');
+        socket.onopen = function(event) {
+            socket.send('HELLO SERVER'); // Sends data to server.
+        };
+
+        // Handle messages sent by the server.
+        socket.onmessage = function(event) {
+            var message = event.data;
+            console.log("CHEGOU MESSAGEM:");
+            console.log(message);
+            socket.send(message);
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>
